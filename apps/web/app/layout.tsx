@@ -16,7 +16,11 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="px-4 w-full bg-red-100">header</header>
+        <main>{children}</main>
+        <footer className="px-4 w-full bg-red-100">footer</footer>
+      </body>
     </html>
   );
 }

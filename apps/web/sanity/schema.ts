@@ -1,5 +1,11 @@
-import { type SchemaTypeDefinition } from 'sanity'
+import { type SchemaTypeDefinition } from "sanity";
+import { blockTypes, blocks } from "./schemas/blocks";
+import { page } from "./schemas/documents/page";
 
-export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [],
-}
+export const schemaTypes = [
+  page,
+  blocks,
+  ...blockTypes,
+] as SchemaTypeDefinition[];
+
+export default schemaTypes;

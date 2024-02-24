@@ -1,7 +1,7 @@
 export default function Page(): JSX.Element {
   return (
-    <main>
+    <section>
       <h1>Bognandi photography</h1>
-    </main>
+    </section>
   );
 }
