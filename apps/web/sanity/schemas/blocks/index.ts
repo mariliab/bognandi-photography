@@ -1,7 +1,8 @@
 import { heroBlockSchema } from "./hero-block-schema";
+import { testimonialBlockSchema } from "./testimonial-block-schema";
 
-export const blockTypes = [heroBlockSchema].sort((a, b) =>
-  (a.name ?? "").localeCompare(b.name ?? "")
+export const blockTypes = [heroBlockSchema, testimonialBlockSchema].sort(
+  (a, b) => (a.name ?? "").localeCompare(b.name ?? "")
 );
 
 export const blocks = {

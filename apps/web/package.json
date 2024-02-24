@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.11",
     "@repo/ui": "workspace:*",
     "@sanity/image-url": "1",
     "@sanity/vision": "3",
@@ -17,7 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sanity": "3",
-    "styled-components": "6"
+    "styled-components": "6",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.0.4",
